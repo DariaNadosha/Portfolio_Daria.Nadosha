@@ -33,25 +33,25 @@ img {
 }
 
 html {
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background-color: #fff;
+  background-color: $light;
 }
 
 .container {
-  width: 100%;
-  padding: 0 10px;
+  width: 1140;
+  margin: 0 auto;
   position: relative;
 }
 
-.just-validate-error-label {
-  margin-top: 8px;
-}
+// .just-validate-error-label {
+//   margin-top: 8px;
+// }
 
 @media screen and (min-width: 768px) {
   .container {

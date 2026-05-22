@@ -1,0 +1,9 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@mixin before_circle {
+  &:before {
+    content: "";
+    border-radius: 100%;
+    fill: $green;
+  }
+}
