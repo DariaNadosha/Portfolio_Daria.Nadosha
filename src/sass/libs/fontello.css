@@ -44,10 +44,13 @@
 
 .icon-github-circled-alt2:before {
   content: "\f056";
+  font-family: "fontello";
 } /* '' */
 .icon-whatsapp:before {
   content: "\f232";
+  font-family: "fontello";
 } /* '' */
 .icon-telegram:before {
   content: "\f2c6";
+  font-family: "fontello";
 } /* '' */

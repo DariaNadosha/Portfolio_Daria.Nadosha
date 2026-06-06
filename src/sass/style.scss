@@ -3,7 +3,9 @@
 
 @use "/src/sass/base/variables.scss";
 @use "/src/sass/base/basic.scss";
+@use "/src/sass/base/mixins.scss";
 
 @use "/src/sass/blocks/promo.scss";
 @use "/src/sass/blocks/title.scss";
 @use "/src/sass/blocks/button.scss";
+@use "/src/sass/blocks/sidepanel.scss";
