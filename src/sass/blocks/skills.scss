@@ -1,0 +1,46 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+
+.skills {
+  padding-top: 120px;
+  &__title {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__items {
+    padding: 60px 10px 0 10px;
+    display: grid;
+    grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+    grid-auto-rows: minmax(270px, auto);
+    gap: 15px;
+  }
+  &__item {
+    border: 1px solid $dark;
+    padding: 30px 30px 25px 30px;
+    img {
+      min-height: 65px;
+    }
+    h3 {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 0;
+    }
+  }
+}
