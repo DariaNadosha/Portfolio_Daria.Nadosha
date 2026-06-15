@@ -11,3 +11,10 @@ hamburger.addEventListener("click", () => {
 closeElem.addEventListener("click", () => {
   menu.classList.remove("active");
 });
+
+const percents = document.querySelectorAll(".skills__ratings-percent"),
+  scales = document.querySelectorAll(".skills__ratings-scale span");
+
+percents.forEach((item, i) => {
+  scales[i].style.width = item.innerHTML;
+});
