@@ -2,40 +2,40 @@
 @use "/src/sass/base/mixins.scss" as *;
 
 .promo {
-  min-height: 100vh;
-  position: relative;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.73) 0%,
-      rgba(102, 102, 102, 0.12) 100%
-    ),
-    url("/src/img/main-bg.jpg") no-repeat 50% / cover;
-  padding-top: 150px;
-  &__title {
-    width: 675px;
-    margin-top: 10px;
-    color: $light;
-  }
-  &__subtitle {
-    color: $light;
-  }
-  &__btns {
-    margin-top: 25px;
-    display: flex;
-    width: 280px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__link {
-    color: $dark;
-    text-decoration: none;
-    font-weight: 700;
-    &:hover {
-      color: $dark;
+    min-height: 100vh;
+    position: relative;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.73) 0%,
+            rgba(102, 102, 102, 0.12) 100%
+        ),
+        url("/src/img/main-bg.jpg") no-repeat 50% / cover;
+    padding-top: 150px;
+    &__title {
+        width: 675px;
+        margin-top: 10px;
+        color: $light;
     }
-    &_light {
-      color: $light;
+    &__subtitle {
+        color: $light;
     }
-  }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        width: 280px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: $dark;
+        text-decoration: none;
+        font-weight: 700;
+        &:hover {
+            color: $dark;
+        }
+        &_light {
+            color: $light;
+        }
+    }
 }

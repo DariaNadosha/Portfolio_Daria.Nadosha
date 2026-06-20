@@ -1,29 +1,29 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .sidepanel {
-  position: absolute;
-  top: 160px;
-  left: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 360px;
-  z-index: 3;
-  &__divider {
-    width: 2px;
-    height: 70px;
-    background-color: $light;
-  }
-  &__text {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    color: $light;
-    font-size: 20px;
-  }
-  a {
-    transform: rotate(-90deg);
-    color: $light;
-    font-size: 24px;
-  }
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 360px;
+    z-index: 3;
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: $light;
+    }
+    &__text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color: $light;
+        font-size: 20px;
+    }
+    a {
+        transform: rotate(-90deg);
+        color: $light;
+        font-size: 24px;
+    }
 }

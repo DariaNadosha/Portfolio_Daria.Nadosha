@@ -2,61 +2,61 @@
 @use "/src/sass/base/mixins.scss" as *;
 
 .resume {
-  padding-top: 120px;
-  &__wrapper {
-    padding: 85px 65px 0 65px;
-    display: grid;
-    grid-template-columns: repeat(2, 425px);
-    column-gap: 145px;
-  }
-  &__column {
-    ul {
-      list-style-type: none;
-      li {
-        position: relative;
-        &:after {
-          content: "";
-          position: absolute;
-          top: -16px;
-          left: 0;
-          width: 1px;
-          height: calc(100% + 40px);
-          background-color: $dark;
+    padding-top: 120px;
+    &__wrapper {
+        padding: 85px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 145px;
+    }
+    &__column {
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    width: 1px;
+                    height: calc(100% + 40px);
+                    background-color: $dark;
+                }
+            }
         }
-      }
     }
-  }
-  &__item {
-    position: relative;
-    &:before {
-      content: "";
-      top: 56px;
-      height: 1px;
-      width: 45px;
-      position: absolute;
-      background-color: $dark;
-    }
-    &-head {
-      position: relative;
-      padding: 45px 0 0 100px;
-    }
-    &-body {
-      padding-left: 43px;
-      margin-top: 25px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: normal;
-    }
-    &-icon {
-      position: absolute;
-      top: 45px;
-      left: 45px;
-      @include before_circle;
-      img {
+    &__item {
         position: relative;
-        left: 19px;
-        top: 10px;
-      }
+        &:before {
+            content: "";
+            top: 56px;
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            background-color: $dark;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 25px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: normal;
+        }
+        &-icon {
+            position: absolute;
+            top: 45px;
+            left: 45px;
+            @include before_circle;
+            img {
+                position: relative;
+                left: 19px;
+                top: 10px;
+            }
+        }
     }
-  }
 }
