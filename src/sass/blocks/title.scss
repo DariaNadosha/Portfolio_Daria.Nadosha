@@ -24,6 +24,28 @@
         font-size: 36px;
         line-height: 60px;
     }
+    &_fz30-promo {
+        font-family:
+            Cormorant Garamond,
+            serif;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    &_fz60-promo {
+        font-family:
+            Cormorant Garamond,
+            serif;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    &_fz70-promo {
+        font-family:
+            Cormorant Garamond,
+            serif;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
     &__section-title {
         position: relative;
         text-align: center;
@@ -37,5 +59,10 @@
 
     &__section-subtitle {
         text-align: center;
+    }
+    @media screen and (max-width: 576px) {
+        &__section-subtitle {
+            padding-top: 20px;
+        }
     }
 }

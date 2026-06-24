@@ -1,0 +1,285 @@
+@media screen and (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.73) 0%,
+                rgba(102, 102, 102, 0.12) 100%
+            ),
+            url("/src/img/main-bg-1200.jpg") no-repeat 50% / cover;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 515px;
+            column-gap: 30px;
+        }
+        &__skills {
+            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+            column-gap: 20px;
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 20px 0 20px;
+            column-gap: 80px;
+        }
+    }
+    .skills {
+        &__items {
+            // grid-template: repeat(2, minmax(310px, auto)) / repeat(3, 310px);
+            // grid-auto-rows: minmax(310px, auto);
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+        // &__item {
+        //     img {
+        //         min-height: 85px;
+        //     }
+        //     h3 {
+        //         font-size: 20px;
+        //     }
+        //     p {
+        //         font-size: 14px;
+        //     }
+        // }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+            line-height: 42px;
+            margin-top: 26px;
+            margin-bottom: 15px;
+        }
+    }
+    .divider {
+        margin: 0 auto;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 350px 350px;
+            column-gap: 20px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+            &-item {
+                grid-template-columns: 40px 310px;
+                column-gap: 15px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 310px);
+            column-gap: 80px;
+        }
+    }
+    .skills {
+        &__items {
+            padding-top: 0 20px;
+            // display: grid;
+            // grid-template: repeat(2, minmax(350px, auto)) / repeat(2, 350px);
+            // grid-auto-rows: minmax(350px, auto);
+            // gap: 20px;
+        }
+        // &__item {
+        //     img {
+        //         min-height: 100px;
+        //     }
+        //     h3 {
+        //         font-size: 20px;
+        //     }
+        //     p {
+        //         font-size: 16px;
+        //     }
+        // }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 0;
+            &-scale {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz70-promo,
+        &_fz60-promo {
+            font-size: 50px;
+        }
+    }
+    .promo {
+        padding-top: 150px;
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.73) 0%,
+                rgba(102, 102, 102, 0.12) 100%
+            ),
+            url("/src/img/main-bg-768.jpg") no-repeat 50% / cover;
+        &__title {
+            width: 500px;
+            margin-top: 10px;
+            line-height: 50px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 530px auto auto / 100%;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            column-gap: 60px;
+        }
+    }
+    .skills {
+        padding-top: 60px;
+        &__items {
+            padding: 40px 0 0 0;
+            justify-content: center;
+            gap: 10px;
+        }
+        &__ratings {
+            margin-top: 80px;
+            grid-template-columns: repeat(auto-fit, 320px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+            &-scale {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .btn {
+        padding: 0 20px;
+    }
+    .title {
+        &_fz60-promo {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &_fz70-promo {
+            font-size: 32px;
+            line-height: 30px;
+        }
+        &_fz30-promo {
+            font-size: 16px;
+        }
+        &_fz36 {
+            font-size: 24px;
+        }
+        &_fz20 {
+            font-size: 14px;
+        }
+    }
+    .promo {
+        min-height: 665px;
+        padding-top: 320px;
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.73) 0%,
+                rgba(102, 102, 102, 0.12) 100%
+            ),
+            url("/src/img/main-bg-mob.jpg") no-repeat 50% / cover;
+
+        &__btns {
+            width: 200px;
+        }
+        &__title {
+            width: 285px;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+    }
+    .hamburger {
+        top: 20px;
+        right: 20px;
+        height: 20px;
+        span {
+            width: 30px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 270px;
+            padding-left: 10px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template: 470px auto auto / 100%;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 5px 0 5px;
+        }
+    }
+    .skills {
+        &__items {
+            margin-top: 20px;
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+}
