@@ -39,27 +39,36 @@
     }
     .skills {
         &__items {
-            // grid-template: repeat(2, minmax(310px, auto)) / repeat(3, 310px);
-            // grid-auto-rows: minmax(310px, auto);
             grid-template-columns: repeat(auto-fit, 270px);
             justify-content: space-between;
         }
-        // &__item {
-        //     img {
-        //         min-height: 85px;
-        //     }
-        //     h3 {
-        //         font-size: 20px;
-        //     }
-        //     p {
-        //         font-size: 14px;
-        //     }
-        // }
         &__ratings {
             grid-template-columns: repeat(auto-fit, 350px);
             grid-auto-rows: minmax(70px, auto);
             justify-content: space-between;
             padding: 0 30px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+            .vertical,
+            .horisontal {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template-columns: repeat(2, 250px);
         }
     }
 }
@@ -73,11 +82,10 @@
             font-size: 30px;
             line-height: 42px;
             margin-top: 26px;
-            margin-bottom: 15px;
         }
     }
     .divider {
-        margin: 0 auto;
+        margin: 15px auto 0 auto;
     }
     .about {
         &__wrapper {
@@ -105,22 +113,7 @@
     .skills {
         &__items {
             padding-top: 0 20px;
-            // display: grid;
-            // grid-template: repeat(2, minmax(350px, auto)) / repeat(2, 350px);
-            // grid-auto-rows: minmax(350px, auto);
-            // gap: 20px;
         }
-        // &__item {
-        //     img {
-        //         min-height: 100px;
-        //     }
-        //     h3 {
-        //         font-size: 20px;
-        //     }
-        //     p {
-        //         font-size: 16px;
-        //     }
-        // }
         &__ratings {
             grid-template-columns: repeat(auto-fit, 320px);
             justify-content: space-between;
@@ -129,6 +122,25 @@
             &-scale {
                 width: 100%;
             }
+        }
+    }
+    .price {
+        &__list {
+            grid-template-columns: repeat(auto-fit, 350px);
+            padding: 0;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 195px);
+        }
+        &__btn {
+            padding: 7px 20px;
+            line-height: 16px;
+            font-size: 14px;
         }
     }
 }
@@ -196,6 +208,31 @@
             &-scale {
                 width: 100%;
             }
+        }
+    }
+    .portfolio {
+        padding-top: 60px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+    .price {
+        padding-top: 40px;
+        &__list {
+            margin-top: 20px;
+            justify-content: center;
+        }
+    }
+    .contacts {
+        padding-top: 40px;
+        &__photo {
+            display: none;
+        }
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
         }
     }
 }
@@ -280,6 +317,38 @@
         }
         &__ratings {
             grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+    .price {
+        &__list {
+            grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+    .contacts {
+        padding-bottom: 40px;
+        &__form {
+            grid-template: 45px 190px 45px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+            padding: 8px 15px;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
     }
 }

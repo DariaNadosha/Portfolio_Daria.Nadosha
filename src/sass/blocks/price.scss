@@ -4,7 +4,7 @@
 .price {
     padding-top: 60px;
     &__list {
-        padding-top: 60px;
+        margin-top: 60px;
         padding: 0 60px;
         display: grid;
         grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px);
